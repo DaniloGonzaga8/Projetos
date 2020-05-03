@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+
+<body>
+    
+    <form>
+
+        <section>
+            <header>
+                <h2>Informações Pessoais</h2>
+            </header>
+            <div>
+                <label for="Nome">Nome:</label>
+                <input id="Nome" type="text" name="Nome" value="">
+            </div>
+            <div>
+                <label for="Sobrenome">Sobrenome:</label>
+                <input id="Sobrenome" type="text" name="Sobrenome" value="">
+            </div>
+            <div>
+                <label for="Nascimento">Nascimento</label>
+                <input type="date" name="Nascimento" step="7" id="Nascimento">
+            </div>
+            <div>
+                <fieldset>
+                    <legend>Sexo</legend>
+                    <ul>
+                        <li>
+                            <input type="radio" name="Sexo" id="Masculino">
+                            <label for="Masculino">Masculino</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="Sexo" id="Feminino">
+                            <label for="Feminino">Feminino</label>
+                        </li>
+                    </ul>
+                </fieldset>
+            </div>
+        </section>
+
+        <section>
+            <header>
+                <h2>Informaçõs da Conta</h2>
+            </header>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div>
+                <label for="Senha">Senha:</label>
+                <input type="password" name="pwd" id="Senha">
+            </div>
+        </section>
+
+        <section>
+            <header>
+                <h2>Informações de Contatos</h2>
+            </header>
+            <div>
+                <label for="Endereço">Endereço:</label>
+                <input id="Endereço" type="text" name="Endereço" value="">
+            </div>
+            <div>
+                <label for="Estado">Estado:</label>
+                <select name="Estado" id="Estado">
+                    <optgroup label="Região Sul do Brasil">
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="PR">Paraná</option>
+                        <option value="SC">Santa Catarina</option>
+                    </optgroup>
+                    <optgroup label="Região Sudeste do Brasil">
+                        <option value="MG">Minas Gerais</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="SP">São Paulo</option>
+                    </optgroup>
+                    <optgroup label="Região Nordeste do Brasil">
+                        <option value="AL">Alagoas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="PI">Piauí</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="SE">Sergipe</option>
+                    </optgroup>
+                    <optgroup label="Região Norte do Brasil">
+                        <option value="AC">Acre</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="PA">Pará</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="TO">Tocantins</option>
+                    </optgroup>
+                    <optgroup label="Região Centro-Oeste do Brasil">
+                        <option value="GO">Goiás</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="DF">Distrito Federal</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div>
+                <label for="Cep">Cep:</label>
+                <input id="Cep" type="text" name="Cep" value="">
+            </div>
+            <div>
+                <label for="Telefone">Telefone:</label>
+                <input type="tel" name="Telefone" id="Telefone">
+            </div>
+        </section>
+
+        <button type="reset">Limpar</button>
+        <button type="submit">Enviar</button>
+
+    </form>
+    
+</body>
+
+</html>
